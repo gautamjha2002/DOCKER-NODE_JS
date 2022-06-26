@@ -7,6 +7,7 @@ RUN if [ "$NODE_ENV" = "development" ]; \
         else npm install --only=production; \
     fi
 
+RUN npm install mongoose
 
 COPY . ./
 ENV PORT 3000
